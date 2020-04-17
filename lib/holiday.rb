@@ -70,10 +70,9 @@ def all_supplies_in_holidays(holiday_hash)
 
  holiday_hash.each do |season, holiday|
    puts season.to_s.capitalize+":"
-#binding.pry
    holiday.each do |holiday_name, supply|
-     #binding.pry
      puts "  #{holiday_name.split}: #{supply.join(", ")}"
+     binding.pry
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
   #   Christmas: Lights, Wreath
